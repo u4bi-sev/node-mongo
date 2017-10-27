@@ -1,0 +1,19 @@
+{
+  "name": "res-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.12.4",
+    "mongoose-double": "0.0.1",
+    "mongoose-string-query": "^0.2.5",
+    "restify": "^6.2.3",
+    "restify-cors-middleware": "^1.0.1"
+  }
+}
