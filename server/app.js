@@ -79,9 +79,8 @@ server.del('/user/:id', (req, res) => {
 });    
 
 server.listen(7779, () => {
-
     mongoose.Promise = global.Promise;
-	mongoose.connect(config.db.uri, { useMongoClient: true });
+    mongoose.connect(config.db.uri, { useMongoClient: true });
 
     let db = mongoose.connection;
     db.once('open', () => console.log(server.name, server.url));
